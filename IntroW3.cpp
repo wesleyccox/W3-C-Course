@@ -93,14 +93,13 @@ int main()
 	
 	switch (choice)
 	{
-	case 17:
-		lesson17();
-	case 18:
-		lesson18();
-	case 0:
-		break;
+		case 17:
+			lesson17();
+		case 18:
+			lesson18();
+		case 0:
+			break;
 	}
-
 	
 	return 0;
 }

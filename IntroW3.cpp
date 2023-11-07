@@ -90,18 +90,17 @@ int main()
 	cin >> choice;
 	cout << "\n\n";
 
-	while (choice != 0)
+	
+	switch (choice)
 	{
-		switch (choice)
-		{
-		case 17:
-			lesson17();
-		case 18:
-			lesson18();
-		case 0:
-			break;
-		}
+	case 17:
+		lesson17();
+	case 18:
+		lesson18();
+	case 0:
+		break;
 	}
+
 	
 	return 0;
 }

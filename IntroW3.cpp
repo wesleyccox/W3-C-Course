@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#Testing an edit done directly on github website
+//this is a test
 
 int lesson17()
 {
@@ -62,7 +62,7 @@ int lesson18()
 
 		Break statement will leave the loop or even switch statements
 
-		Continue can be used to skip certain variables in a loop and still run through the rest 
+		Continue can be used to skip certain variables in a loop and still run through the rest
 		of the loop
 	*/
 
@@ -82,6 +82,30 @@ int lesson18()
 	return 0;
 }
 
+int lesson19()
+{
+	/*
+		Lesson 19: C++ Arrays
+
+		Array: Used to store multiple values in a single variable, instead of declaring separate variables for each value
+			
+			When declaring an array, you define the variable type and then specify the name of the array followed by the
+				[] where you will specify the number of elements 
+
+	*/
+
+	string magicTypes[4] = { "Water", "Earth", "Fire", "Air" };
+
+
+	//This will traverse the array and print out the contents, because the array is of size 4 we start at 0 for the first postition
+	for (int i = 0; i < 4; i++)
+	{
+		cout << magicTypes[i] << "\n";
+	}
+
+	return 0;
+}
+
 int main()
 {
 	int choice;
@@ -90,16 +114,20 @@ int main()
 	cin >> choice;
 	cout << "\n\n";
 
-	
+
 	switch (choice)
 	{
-		case 17:
-			lesson17();
-		case 18:
-			lesson18();
-		case 0:
-			break;
+	case 17:
+		lesson17();
+	case 18:
+		lesson18();
+	case 19:
+		lesson19();
+	case 0:
+		break;
 	}
-	
+
+
+	//THis is a test comment
 	return 0;
 }
